@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,800;1,600&display=swap');
+
+:root {
+    --primary: #021b5e;
+    --secondary: #8ad803;
+    --light: #F7F7F7;
+    --dark: #404A3D;
+}
+
+.fw-bold {
+    font-weight: 700 !important;
+}
+
+.fw-medium {
+    font-weight: 600 !important;
+}
+
+.fw-semi-bold {
+    font-weight: 500 !important;
+}
+.fw-light {
+    font-weight: 300 !important;
+}
+
+body {
+    background-image:url('images/skyscraper.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
+    font-size: 24px;
+}
+
+.home-navbar{
+    background-color: transparent;
+   
+}
+.home-navbar-brand {
+    color: #F7F7F7;
+}
+
+.navi-link, .services-navbar{
+    /* color: #12235B; */
+    color:#F7F7F7;
+    font-family: 'Playfair Display', serif;
+    font-size: large;
+    line-height: 4rem;
+}
+
+.nav-link h5 {
+    font-style: italic;
+    line-height: 4rem;
+
+}
+
+/* home page overlay text */
+maintxt {
+    position: relative;
+}
+
+.maintxt>img,
+.overlay-text {
+    position: fixed;
+}
+
+.overlay-text {
+    padding: 150px 50px;
+    color: #F7F7F7;
+    font-size: 34px;
+}
+
+.overlay-text p {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+/* About Page */
+.about-container{
+    background: #FCFDFF;
+}
+
+.about-nav {
+    color: #021b5e;
+    font-family: 'Playfair Display', serif;
+    font-size: large;
+    line-height: 4rem;
+
+}
+.about-experience {
+    background-color:#021b5e;
+    color: whitesmoke;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: -45px;
+    bottom: -45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/*** Service ***/
+.service-item {
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+}
+.text-logo-img{
+display: none;
+}
+
+.service-item .service-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.service-item .service-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.service-item .service-img::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.service-item .service-img::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #FFFFFF;
+    transition: .5s ease-out;
+    z-index: 2;
+}
+
+.service-item:hover .service-img::after {
+    width: 0;
+    left: auto;
+    right: 0;
+}
+
+.service-item .service-text .service-icon {
+    width: 140px;
+    height: 140px;
+    padding: 15px;
+    margin-top: -70px;
+    margin-bottom: 40px;
+    background: #FFFFFF;
+    border-radius: 140px;
+    overflow: hidden;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .1);
+}
+
+.service-item .service-text h5,
+.service-item .service-text p {
+    transition: .5s;
+}
+
+.service-item:hover .service-text h5,
+.service-item:hover .service-text p {
+    color: #FFFFFF;
+    font-size: 24px;
+}
+.service-item:hover .service-text li{
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+.service-item .service-text .btn {
+    color: var(--secondary);
+    background: #FFFFFF;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .25);
+}
+
+.service-item .service-text .btn:hover {
+    color: var(--dark);
+    background: var(--secondary);
+}
+.endpage{
+border-top: 1px solid #ddd;
+font-size: 14px;
+
+}
+.square-color-dark{
+    background-color: #021b5e;
+}
+.square-color-light {
+    background-color: #e7e9ee;
+    color: #021b5e;
+}
+.team-card{
+    color: #021b5e;
+}
+/*** Team ***/
+.team-item {
+    position: relative;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+}
+
+.team-item .btn {
+    border-color: transparent;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .2);
+}
+
+/* Energy Solutions page */
+ 
+ .background-section {
+     /* Set the background image URL */
+     background-image: url('images/solarpanels.jpg');
+     /* Adjust the background size and position */
+     background-size: cover;
+     background-position: center;
+     /* Set the height or min-height to ensure the image covers the section */
+     min-height: 500px;
+     /* Adjust this value as needed */
+     /* Add other custom styles if necessary */
+     color: white;
+     text-align: center;
+     
+ }
+
+ .background-section p {
+    margin-top: 60px;
+     font-size: 1.7rem;
+     /* padding-left: 250px; */
+     margin-left: 260px;
+ }
+
+ .esfont{
+    font-size: 20px;
+    text-align: justify;
+    color: #021b5e;
+ }
+ .esfont2{
+    font-size: 24px;
+    text-align: justify;
+    color: #021b5e;
+ }
+ .parallax-text{
+    text-align: justify;
+ }
+
+ .row-reverse-img{
+    width:100vw;
+    height:350px;
+ }
+ .postcard {
+     flex-wrap: wrap;
+     display: flex;
+     box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+     border-radius: 10px;
+     margin: 0 0 1rem 0;
+     overflow: hidden;
+     position: relative;
+     color: #ffffff;
+ }
+ /* card start */
+
+ h2 {
+     font-weight: 900
+ }
+
+ .container-fluid {
+     max-width: 1200px
+ }
+
+ .card {
+     background:#FCFDFF;
+     box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+     transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+     border: 0;
+     border-radius: 1rem;
+     width:auto;
+ }
+ .card2 {
+     background: #FCFDFF;
+     box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+     transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+     border: 0;
+     /* border-radius: 1rem; */
+     width: auto;
+ }
+
+ .card-img,
+ .card-img-top {
+     border-top-left-radius: calc(1rem - 1px);
+     border-top-right-radius: calc(1rem - 1px)
+ }
+
+ .card-img-top {
+     width: 100%;
+     max-height: 180px;
+     object-fit: contain;
+     padding: 30px
+ }
+
+ .card h2 {
+     font-size: 1rem
+ }
+
+ .card:hover {
+     transform: scale(1.05);
+     box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06)
+ }
+ .svg-img{
+    height: 30vh;
+    max-width:20vw;
+ }
+ .solutions-bg{
+    background-color: #eef2f3;
+ }
+ .card-bg{
+    background-color: #FCFDFF;
+ }
+/* Process Engineering */
+.background-section2 {
+    background-image: url('images/chem-pro.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    color: white;
+    text-align: center;
+   
+
+}
+.box-image{
+    height: 100vh;
+    /* width: 100vw; */
+}
+ .index{
+    z-index: 2;
+ }
+.sm-pop{
+    background-color:#021b5e ;
+    color:#8ad803 ;
+}
+/* Research Support */
+.background-section3 {
+    background-image: url('images/library.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 250px;
+    color: white;
+    text-align: center;
+
+}
+/* Training */
+.background-section4 {
+    background-image: url('images/training.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 450px;
+    color: white;
+    text-align: center;
+
+}
+.entrepreneurship-section{
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #0ED2F7 #B2FEFA;
+    height:400px;
+    box-sizing: border-box;
+    line-height: 1.3rem;
+   
+}
+.process-eng-section{
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #f12711 #f5af19;
+    height: 450px;
+    box-sizing: border-box;
+   
+    line-height: 1.3rem;  
+}
+.project-mgt-section{
+border-style: solid;
+    border-radius: 20px;
+    border-color: #a8ff78 #78ffd6;
+    height: 450px;
+    box-sizing: border-box;
+
+    line-height: 1.3rem;
+}
+.text-color-training{
+    color:#0ED2F7;
+}
+.text-color-proeng{
+    color:#f12711;
+}
+.text-color-promgt{
+    color:#a8ff78;
+}
+
+/* projects page */
+.project-filter {
+    justify-items: center;
+    text-align: center;
+    margin-inline: 5px 10px;
+}
+.grid--xl {
+    display: grid;
+    gap: 1.75rem;
+}
+.filter-tags {
+    padding: 15px;
+    border: .2rem solid #021b5e;
+    border-radius:20px;
+    /* /* max-width: fit-content; */
+    max-width: fit-content; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 20px;
+    gap: 0.5rem clamp(.5rem, 1vw, 1rem);
+}
+.filter-btn-color{
+    background-color: #021b5e;
+}
+.port-image {
+    width: 100%;
+}
+
+.col-md-3 {
+    margin-bottom: 20px;
+}
+
+.each-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.each-item:hover .cap2,
+.each-item:hover .cap1 {
+    left: 0px;
+}
+
+.cap1 {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    background: rgba(255, 255, 255, 0.5);
+    top: 0px;
+    left: -100%;
+    padding: 10px;
+
+    transition: all .5s;
+}
+
+.cap2 {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    background: rgba(0, 178, 255, 0.5);
+    bottom: 0px;
+    left: 100%;
+    padding: 10px;
+
+    transition: all .5s;
+}
+@media only screen and (max-width:767px) {
+body{
+   background-image: url(images/skyscraper.jpg);
+   height:100vh;
+}
+.text-logo-h1{
+    display: none;
+}
+.text-logo-img{
+    display: inline;
+}
+.m-navbar{
+    background-color: #F7F7F7;
+}
+.background-section p {
+   display: none;
+}
+.flex-row-reverse-mobile {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+}
+.services-navbar{
+    color:black;
+}
+.mobile-svg{
+   display: none;
+    
+
+}
+}
